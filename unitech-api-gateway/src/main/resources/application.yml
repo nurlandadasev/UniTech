@@ -1,0 +1,33 @@
+server:
+  port: 8000
+
+eureka:
+  host: localhost:8761
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host}/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: unitech-api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: unitech-auth-server
+          uri: lb://unitech-auth-server
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AuthenticationFilter
+            - StripPrefix=1
+  main:
+    web-application-type: reactive
