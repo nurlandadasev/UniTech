@@ -12,7 +12,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @EntityGraph(attributePaths = "role", type = EntityGraph.EntityGraphType.FETCH)
     Optional<User> findUserById(long userId);
 
-    User findByUsername(String username);
+    User findByPin(String pin);
 
 
 }

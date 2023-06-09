@@ -3,6 +3,7 @@ package az.unibank.authserver.controller;
 
 import az.unibank.authserver.dto.request.LoginWithPasswordRequest;
 import az.unibank.authserver.dto.request.RefreshTokenRequest;
+import az.unibank.authserver.dto.request.RegisterNewUser;
 import az.unibank.authserver.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -16,6 +17,11 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     private final AuthService authService;
+
+    @PostMapping("/register")
+    public ResponseEntity<Object> register (@RequestBody RegisterNewUser registerNewUser) {
+        return ResponseEntity.ok(authService.registerUser(registerNewUser));
+    }
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody LoginWithPasswordRequest request) {

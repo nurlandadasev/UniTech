@@ -1,21 +1,21 @@
 package az.unibank.commons.enums;
 
-public enum Role {
+public enum RoleEnum {
 
-    SUPER_ADMIN(1),
+    ADMIN(1),
     USER(2),
     UNKNOWN(0);
 
     private final int value;
 
-    Role(int value) {
+    RoleEnum(int value) {
         this.value = value;
     }
 
-    public static Role from(int value) {
-        for (Role role : Role.values()) {
-            if (role.value == value) {
-                return role;
+    public static RoleEnum from(int value) {
+        for (RoleEnum roleEnum : RoleEnum.values()) {
+            if (roleEnum.value == value) {
+                return roleEnum;
             }
         }
         return UNKNOWN;

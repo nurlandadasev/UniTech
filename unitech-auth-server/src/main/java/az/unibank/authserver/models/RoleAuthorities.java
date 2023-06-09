@@ -9,8 +9,8 @@ import lombok.*;
 @AllArgsConstructor(staticName = "of")
 @Builder
 @Entity
-@Table(name = "user_authorities")
-public class UserAuthority {
+@Table(name = "role_authorities")
+public class RoleAuthorities {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

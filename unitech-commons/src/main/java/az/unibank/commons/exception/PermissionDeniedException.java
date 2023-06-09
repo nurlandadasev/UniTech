@@ -6,7 +6,7 @@ public class PermissionDeniedException extends RuntimeException {
         this(null, null);
     }
 
-    public PermissionDeniedException(String username, String path) {
-        super("User " + username + ". Permission denied for path: " + path);
+    public PermissionDeniedException(String pin, String path) {
+        super("User " + pin + ". Permission denied for path: " + path);
     }
 }

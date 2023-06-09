@@ -32,10 +32,6 @@ public class JwtUtils {
         JwtUtils.secretKey = secretKey;
     }
 
-    public static String extractUsername(String token) {
-        return extractClaim(token, Claims::getSubject);
-    }
-
     public static Date extractExpiration(String token) {
         return extractClaim(token, Claims::getExpiration);
     }

@@ -11,7 +11,7 @@ import lombok.Setter;
 public class LoginWithPasswordRequest {
 
     @NotNull
-    private String username;
+    private String pin;
 
     @NotNull
     private String password;

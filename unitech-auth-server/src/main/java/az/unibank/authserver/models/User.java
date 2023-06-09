@@ -18,31 +18,22 @@ import java.time.LocalDateTime;
 @JsonIgnoreProperties(value = {"password"}, allowSetters = true)
 public class User {
 
-    public User(int id) {
-        this.id = id;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String name;
 
-    @Column(unique = true)
-    private String username;
+    @Column(unique = true, name = "pin")
+    private String pin;
 
     private String password;
 
     private String phone;
 
-    // 0 - inactive, 1 - active
-    private int status;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
-
-    private String activationToken;
 
     @Column(updatable = false)
     @CreationTimestamp
@@ -60,8 +51,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", username='" + username + '\'' +
-                ", status=" + status +
+                ", pin='" + pin + '\'' +
                 ", role=" + role.getName() +
                 '}';
     }
