@@ -9,6 +9,8 @@
         <module>unitech-api-gateway</module>
         <module>unitech-auth-server</module>
         <module>unitech-eureka-server</module>
+        <module>unitech-app</module>
+        <module>unitech-persistence</module>
     </modules>
 
     <parent>

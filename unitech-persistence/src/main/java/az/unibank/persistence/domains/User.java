@@ -1,4 +1,4 @@
-package az.unibank.authserver.models;
+package az.unibank.persistence.domains;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -6,6 +6,8 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Getter
@@ -45,6 +47,12 @@ public class User {
     private int isBlocked;
 
     private LocalDateTime blockedDate;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<Account> accountList = new ArrayList<>();
+
+
+
 
     @Override
     public String toString() {

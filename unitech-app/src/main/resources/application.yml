@@ -1,5 +1,5 @@
 server:
-  port: 8899
+  port: 8999
 
 eureka:
   host: localhost:8761
@@ -13,7 +13,7 @@ eureka:
 
 spring:
   application:
-    name: unitech-auth-server
+    name: unitech-app
   datasource:
     url: jdbc:postgresql://vmi1229865.contaboserver.net:5439/unitech?useUnicode=true&&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
     driver-class-name: org.postgresql.Driver

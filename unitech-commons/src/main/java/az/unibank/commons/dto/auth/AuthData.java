@@ -16,7 +16,6 @@ public class AuthData {
     private long id;
     private String name;
     private String pin;
-    private Integer currentUserAccountId;
     private RoleDTO selectedRole;
 
 }

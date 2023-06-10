@@ -1,4 +1,4 @@
-package az.unibank.authserver.models;
+package az.unibank.persistence.domains;
 
 import jakarta.persistence.*;
 import lombok.*;

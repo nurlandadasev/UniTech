@@ -1,17 +1,10 @@
 package az.unibank.authserver.util;
 
-import az.unibank.authserver.models.User;
-import az.unibank.authserver.repo.UserRepository;
 import az.unibank.commons.config.Constants;
 import az.unibank.commons.enums.PasswordValidationResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDateTime;
-
-import static java.util.Objects.nonNull;
 
 @Log4j2
 @Component

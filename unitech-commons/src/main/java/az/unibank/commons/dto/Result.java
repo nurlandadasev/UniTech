@@ -1,4 +1,4 @@
-package az.unibank.commons.domains;
+package az.unibank.commons.dto;
 
 
 import az.unibank.commons.config.Constants;

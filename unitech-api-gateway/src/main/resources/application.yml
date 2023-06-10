@@ -29,5 +29,13 @@ spring:
           filters:
             - AuthenticationFilter
             - StripPrefix=1
+        - id: unitech-app
+          uri: lb://unitech-app
+          predicates:
+            - Path=/app/**
+          filters:
+            - AuthenticationFilter
+            - StripPrefix=1
+
   main:
     web-application-type: reactive

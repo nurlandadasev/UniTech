@@ -1,4 +1,4 @@
-package az.unibank.authserver.models;
+package az.unibank.persistence.domains;
 
 import lombok.*;
 
@@ -9,12 +9,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "of")
 @Entity
-@Table(name = "roles")
-public class Role {
-
-    public Role(int id) {
-        this.id = id;
-    }
+@Table(name = "authorities")
+public class Authority {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

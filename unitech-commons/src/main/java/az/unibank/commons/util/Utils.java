@@ -39,6 +39,7 @@ public class Utils {
         objectMapper.registerModule(new JavaTimeModule());
     }
 
+
     public static <T> T convertJsonToObject(String json, Class<T> type) {
         if (isNull(json)) {
             return null;

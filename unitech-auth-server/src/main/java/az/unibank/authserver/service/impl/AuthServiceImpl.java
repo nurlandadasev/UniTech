@@ -6,15 +6,11 @@ import az.unibank.authserver.dto.request.LoginWithPasswordRequest;
 import az.unibank.authserver.dto.request.RefreshTokenRequest;
 import az.unibank.authserver.dto.request.RegisterNewUser;
 import az.unibank.authserver.mapper.UserMapper;
-import az.unibank.authserver.models.Role;
-import az.unibank.authserver.models.User;
-import az.unibank.authserver.repo.RoleRepository;
-import az.unibank.authserver.repo.UserAuthorityRepository;
-import az.unibank.authserver.repo.UserRepository;
+
 import az.unibank.authserver.service.AuthService;
 import az.unibank.authserver.util.PasswordUtils;
 import az.unibank.commons.config.Constants;
-import az.unibank.commons.domains.Result;
+import az.unibank.commons.dto.Result;
 import az.unibank.commons.dto.auth.AuthData;
 import az.unibank.commons.dto.auth.RefreshTokenData;
 import az.unibank.commons.dto.auth.RoleDTO;
@@ -22,6 +18,11 @@ import az.unibank.commons.enums.PasswordValidationResult;
 import az.unibank.commons.enums.RoleEnum;
 import az.unibank.commons.exception.UnauthorizedException;
 import az.unibank.commons.util.JwtUtils;
+import az.unibank.persistence.domains.Role;
+import az.unibank.persistence.domains.User;
+import az.unibank.persistence.repo.RoleRepository;
+import az.unibank.persistence.repo.UserAuthorityRepository;
+import az.unibank.persistence.repo.UserRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -57,6 +58,15 @@ public class AuthServiceImpl implements AuthService {
     public Object registerUser(RegisterNewUser registerNewUser) {
         User user = userMapper.mapToEntity(registerNewUser);
         Optional<Role> userRole = roleRepository.findById(RoleEnum.USER.value());
+
+        String pinAfterTrim = registerNewUser.getPin().trim();
+        User byPin = userRepository.findByPin(pinAfterTrim);
+
+        if (byPin != null)
+            return Result.Builder().response(ACCOUNT_ALREADY_REGISTERED)
+                    .add("errorMessage", String.format("User with this pin %s already exists", pinAfterTrim))
+                    .build();
+
 
         if (userRole.isEmpty())
             return Result.Builder().response(SERVER_ERROR)

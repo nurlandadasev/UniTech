@@ -1,7 +1,7 @@
-package az.unibank.authserver.repo;
+package az.unibank.persistence.repo;
 
 
-import az.unibank.authserver.models.RoleAuthorities;
+import az.unibank.persistence.domains.RoleAuthorities;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,7 +1,7 @@
 package az.unibank.authserver.mapper;
 
 import az.unibank.authserver.dto.request.RegisterNewUser;
-import az.unibank.authserver.models.User;
+import az.unibank.persistence.domains.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
