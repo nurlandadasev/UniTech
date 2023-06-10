@@ -48,7 +48,8 @@ public class SecurityConfig {
                                 authorize
                                         .requestMatchers("/docs", "/swagger-ui/**", "/v3/api-docs", "/v3/api-docs/**", "/actuator/**").permitAll()
                                         .requestMatchers("/public/**").permitAll()
-                                        .requestMatchers("/accounts/**").permitAll()
+                                        .requestMatchers("/accounts/**").hasAuthority("USER_AUTHORITY")
+                                        .requestMatchers("/currency-rate/**").hasAuthority("USER_AUTHORITY")
                                         .anyRequest().authenticated()
                                         .and()
                                         .cors().and()

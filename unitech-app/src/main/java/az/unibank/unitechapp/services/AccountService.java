@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface AccountService {
 
-    List<AccountDto> getAllActiveUserAccounts ();
+    Object getAllActiveUserAccounts();
 
     Object transferMoneyToMyAnotherAccount(TransferMoneyRequestDto transferMoneyRequestDto);
 

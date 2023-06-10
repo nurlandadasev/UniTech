@@ -8,6 +8,8 @@ public class Constants {
     public static String USER = "user";
     public static String RESPONSE_CODE = "code";
     public static String RESPONSE_MESSAGE = "message";
+
+    public static String RESPONSE_FULL_MESSAGE = "fullMessage";
     public static String ERROR = "error";
 
 }

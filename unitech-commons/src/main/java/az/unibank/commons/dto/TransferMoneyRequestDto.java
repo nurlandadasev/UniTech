@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Builder
 public class TransferMoneyRequestDto {
 
-    private BigDecimal transferMoney;
+    private BigDecimal transferMoneyAmount;
     private long fromAccountId;
     private long toAccountId;
 

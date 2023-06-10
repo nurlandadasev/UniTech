@@ -34,6 +34,10 @@ public class Account {
     private BigDecimal balance;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "currency_fk", nullable = false)
+    private Currency currency;
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_fk", nullable = false)
     private User user;
 
