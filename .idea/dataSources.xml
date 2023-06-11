@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="unitech@vmi1229865.contaboserver.net" uuid="04598d7c-dbf8-4d06-bdda-57e314942a03">
+    <data-source source="LOCAL" name="postgres@vmi1229865.contaboserver.net" uuid="1e1df660-b958-4552-9f69-1bec455c6245">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://vmi1229865.contaboserver.net:5439/unitech</jdbc-url>
+      <jdbc-url>jdbc:postgresql://vmi1229865.contaboserver.net:5439/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

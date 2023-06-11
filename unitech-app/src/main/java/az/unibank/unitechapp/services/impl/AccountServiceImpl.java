@@ -1,7 +1,5 @@
 package az.unibank.unitechapp.services.impl;
 
-import az.unibank.commons.config.Constants;
-import az.unibank.commons.dto.AccountDto;
 import az.unibank.commons.dto.Result;
 import az.unibank.commons.dto.TransferMoneyRequestDto;
 import az.unibank.commons.util.security.SecurityUtils;
@@ -77,6 +75,9 @@ public class AccountServiceImpl implements AccountService {
         BigDecimal currentCurrencyRate = currencyRateService.getCurrentCurrencyRate(fromAccount.getCurrency().getId(), toAccount.getCurrency().getId());
 
         toAccount.setBalance(toAccount.getBalance().add(transferMoneyAmount.multiply(currentCurrencyRate)));
+
+        accountRepository.save(fromAccount);
+        accountRepository.save(toAccount);
 
         return Result.Builder().response(OK)
                 .build();

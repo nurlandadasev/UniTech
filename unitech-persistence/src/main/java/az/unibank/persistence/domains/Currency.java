@@ -9,6 +9,7 @@ import lombok.*;
 @AllArgsConstructor(staticName = "of")
 @Builder
 @Entity
+@EqualsAndHashCode
 @Table(name = "currency")
 public class Currency {
 

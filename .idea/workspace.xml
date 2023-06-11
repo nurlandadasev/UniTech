@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c515c61-b0b3-4996-a605-dbe21d18e88c" name="Changes" comment="Add">
+      <change afterPath="$PROJECT_DIR$/unitech-app/src/test/java/az/unibank/unitechapp/services/impl/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitech-auth-server/src/test/java/az/unibank/authserver/service/impl/AuthServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitech-auth-server/src/test/java/az/unibank/authserver/service/impl/AuthServiceImplTestMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-app/src/main/java/az/unibank/unitechapp/services/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-app/src/main/java/az/unibank/unitechapp/services/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech-persistence/src/main/java/az/unibank/persistence/domains/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/api-gateway">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit5 &amp; Mockito" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2R3PJHnLaNlCwqqT4uwysWmg1s1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nurlandadashov/Documents/GitHub/UniTech&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21728972&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7f3e507b5e5a0292705a7ae2f191b085&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="az.unibank.authserver.repo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/unitech-commons/src/main/java/az/unibank/commons/dto/request" />
+      <recent name="$PROJECT_DIR$/unitech-api-gateway/src/main/java/az/unibank/apigateway" />
+      <recent name="$PROJECT_DIR$/unitech-eureka-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/unitech-auth-server/src/main/java/az/unibank/authserver" />
+      <recent name="$PROJECT_DIR$/unitech-commons/src/main/java/az/unibank/commons" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="az.unibank.commons.dto" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="az.unibank.authserver.service.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="az.unibank.unitechapp.confg" />
+      <recent name="az.unibank.unitechapp.exceptions" />
+      <recent name="az.unibank.unitechapp.utils" />
+      <recent name="az.unibank.authserver.config" />
+      <recent name="az.unibank.unitechapp.filter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AuthServiceImplTest">
+    <configuration name="AccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unitech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.unibank.unitechapp.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.unibank.unitechapp.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="az.unibank.unitechapp.services.impl.AccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unitech-auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.unibank.authserver.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.unibank.authserver.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="az.unibank.authserver.service.impl.AuthServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceImplTest.testGetUserAuthorities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unitech-auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.unibank.authserver.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.unibank.authserver.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="az.unibank.authserver.service.impl.AuthServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetUserAuthorities" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceImplTest.testGetUserAuthorities_IfUserUna" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unitech-auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.unibank.authserver.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.unibank.authserver.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="az.unibank.authserver.service.impl.AuthServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetUserAuthorities_IfUserUna" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceImplTest.testGetUserAuthorities_UserAuthorityRepositoryReturnsNoItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unitech-auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.unibank.authserver.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="az.unibank.authserver.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="az.unibank.authserver.service.impl.AuthServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetUserAuthorities_UserAuthorityRepositoryReturnsNoItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="unitech-api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.unibank.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.unibank.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="unitech-auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.unibank.authserver.AuthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="unitech-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.unibank.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitechAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="unitech-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.unibank.unitechapp.UnitechAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthServiceImplTest" />
+        <item itemvalue="JUnit.AuthServiceImplTest.testGetUserAuthorities" />
+        <item itemvalue="JUnit.AccountServiceImplTest" />
+        <item itemvalue="JUnit.AuthServiceImplTest.testGetUserAuthorities_UserAuthorityRepositoryReturnsNoItems" />
+        <item itemvalue="JUnit.AuthServiceImplTest.testGetUserAuthorities_IfUserUna" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c515c61-b0b3-4996-a605-dbe21d18e88c" name="Changes" comment="" />
+      <created>1686255145607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686255145607</updated>
+      <workItem from="1686255146977" duration="58722000" />
+      <workItem from="1686475720416" duration="46000" />
+      <workItem from="1686475770171" duration="32000" />
+      <workItem from="1686475807857" duration="37000" />
+      <workItem from="1686475932860" duration="78000" />
+      <workItem from="1686476017055" duration="200000" />
+      <workItem from="1686476221642" duration="165000" />
+      <workItem from="1686476393615" duration="163000" />
+      <workItem from="1686476562496" duration="6233000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Create git repo 2 step" />
+    <MESSAGE value="Add exception handler" />
+    <MESSAGE value="Add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/unitech-api-gateway/src/main/java/az/unibank/apigateway/handler/ExceptionHandler.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/unitech-auth-server/src/main/java/az/unibank/authserver/service/impl/AuthServiceImpl.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/unitech-auth-server/src/main/java/az/unibank/authserver/service/impl/AuthServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/unitech-auth-server/src/main/java/az/unibank/authserver/service/impl/AuthServiceImpl.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/UniTech$AuthServiceImplTest_testGetUserAuthorities.ic" NAME="AuthServiceImplTest.testGetUserAuthorities Coverage Results" MODIFIED="1686482241140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>az.unibank.authserver.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UniTech$AuthServiceImplTest.ic" NAME="AuthServiceImplTest Coverage Results" MODIFIED="1686482158254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>az.unibank.authserver.service.impl.*</FILTER>
+    </SUITE>
+  </component>
+</project>

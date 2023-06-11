@@ -16,6 +16,7 @@ import java.util.List;
 @AllArgsConstructor(staticName = "of")
 @Builder
 @Entity
+@EqualsAndHashCode
 @Table(name = "users")
 @JsonIgnoreProperties(value = {"password"}, allowSetters = true)
 public class User {

@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor(staticName = "of")
 @Builder
 @Entity
+@EqualsAndHashCode
 @Table(name = "account")
 public class Account {
 
@@ -40,6 +41,9 @@ public class Account {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_fk", nullable = false)
     private User user;
+
+
+
 
 
 }

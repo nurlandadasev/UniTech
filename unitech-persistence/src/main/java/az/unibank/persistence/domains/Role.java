@@ -9,6 +9,7 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "of")
 @Entity
+@EqualsAndHashCode
 @Table(name = "roles")
 public class Role {
 
