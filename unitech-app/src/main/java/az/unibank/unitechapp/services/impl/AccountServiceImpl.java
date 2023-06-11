@@ -1,5 +1,6 @@
 package az.unibank.unitechapp.services.impl;
 
+import az.unibank.commons.dto.AccountDto;
 import az.unibank.commons.dto.Result;
 import az.unibank.commons.dto.TransferMoneyRequestDto;
 import az.unibank.commons.util.security.SecurityUtils;
@@ -37,9 +38,9 @@ public class AccountServiceImpl implements AccountService {
     public Object getAllActiveUserAccounts() {
         long currentUserFromSession = securityUtils.getCurrentUser();
         List<Account> allAccountsByUserId = accountRepository.findAllActiveAccountsByUserId(currentUserFromSession);
-
+        List<AccountDto> accountDtos = accountMapper.mapToDtoList(allAccountsByUserId);
         return Result.Builder().response(OK)
-                .add("allActiveAccounts", allAccountsByUserId)
+                .add("allActiveAccounts", accountDtos)
                 .build();
     }
 

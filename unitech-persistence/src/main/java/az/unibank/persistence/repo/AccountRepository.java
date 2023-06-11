@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
-    @Query("select a from Account a where current date <= a.endDate and a.isActive=true")
+    @Query("select a from Account a join fetch a.currency where current date <= a.endDate and a.isActive=true")
     List<Account> findAllActiveAccountsByUserId(long userId);
 
     @EntityGraph(attributePaths = "currency", type = EntityGraph.EntityGraphType.FETCH)

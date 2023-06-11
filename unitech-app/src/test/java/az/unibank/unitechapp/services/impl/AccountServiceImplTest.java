@@ -1,5 +1,7 @@
 package az.unibank.unitechapp.services.impl;
 
+import az.unibank.commons.dto.AccountDto;
+import az.unibank.commons.dto.CurrencyDto;
 import az.unibank.commons.dto.Result;
 import az.unibank.commons.dto.TransferMoneyRequestDto;
 import az.unibank.commons.util.security.SecurityUtils;
@@ -8,7 +10,6 @@ import az.unibank.persistence.domains.Currency;
 import az.unibank.persistence.repo.AccountRepository;
 import az.unibank.unitechapp.mapper.AccountMapper;
 import az.unibank.unitechapp.services.CurrencyRateService;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -23,7 +24,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static az.unibank.commons.enums.ResponseCode.ACCOUNT_ALREADY_REGISTERED;
 import static az.unibank.commons.enums.ResponseCode.OK;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.then;
@@ -61,12 +61,21 @@ class AccountServiceImplTest {
                 .build());
         when(mockAccountRepository.findAllActiveAccountsByUserId(0L)).thenReturn(accounts);
 
+        final List<AccountDto> accountsDtoResponse = List.of(AccountDto.builder()
+                .endDate(LocalDate.of(2020, 1, 1))
+                .balance(new BigDecimal("0.00"))
+                .currency(CurrencyDto.builder()
+                        .id(0L)
+                        .build())
+                .build());
+        when(mockAccountMapper.mapToDtoList(accounts)).thenReturn(accountsDtoResponse);
+
         // Run the test
         final Object result = accountServiceImplUnderTest.getAllActiveUserAccounts();
 
         // Verify the results
         assertEquals(Result.Builder().response(OK)
-                .add("allActiveAccounts", accounts)
+                .add("allActiveAccounts", accountsDtoResponse)
                 .build(), result);
     }
 
