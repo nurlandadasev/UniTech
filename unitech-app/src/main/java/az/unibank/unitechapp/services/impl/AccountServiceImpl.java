@@ -73,9 +73,13 @@ public class AccountServiceImpl implements AccountService {
 
         fromAccount.setBalance(fromAccount.getBalance().subtract(transferMoneyAmount));
 
-        BigDecimal currentCurrencyRate = currencyRateService.getCurrentCurrencyRate(fromAccount.getCurrency().getId(), toAccount.getCurrency().getId());
+        if (fromAccount.getCurrency().getId() != toAccount.getCurrency().getId()) {
+            BigDecimal currentCurrencyRate = currencyRateService.getCurrentCurrencyRate(fromAccount.getCurrency().getId(), toAccount.getCurrency().getId());
 
-        toAccount.setBalance(toAccount.getBalance().add(transferMoneyAmount.multiply(currentCurrencyRate)));
+            toAccount.setBalance(toAccount.getBalance().add(transferMoneyAmount.multiply(currentCurrencyRate)));
+        } else {
+            toAccount.setBalance(toAccount.getBalance().add(transferMoneyAmount));
+        }
 
         accountRepository.save(fromAccount);
         accountRepository.save(toAccount);
