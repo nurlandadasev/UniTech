@@ -1,6 +1,8 @@
 # UniTech app
 
-I made a microservice architecture only for demonstrate my knowledge. For such a small application, I think it's better to use a monolith.
+I made a microservice architecture only for demonstrate my knowledge. For such a small application, I think it's better to use a monolith. 
+
+This is a multi-module maven application.
 You can run a project without having a database on your machine! Just run the project in your IDE.
 I connect this project to my database on my server, you can see in the application.properties 
 of the projects unitech-app or unitech-auth-server.
